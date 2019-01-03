@@ -29,6 +29,7 @@ const initialState = {
 }
 
 function reducer(state = initialState, action) {
+    console.log(action)
     switch(action.type) {
         case START_TIMER:
             return applyStartTimer(state);
@@ -76,4 +77,5 @@ const actionCreators = {
     addSecond
 }
 
+export { actionCreators };
 export default reducer;
